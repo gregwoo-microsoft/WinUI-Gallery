@@ -14,7 +14,7 @@ using Windows.UI.Composition;
 
 namespace AppUIBasics
 {
-    public sealed partial class HeaderTiles : UserControl
+    public sealed partial class HeaderTile : UserControl
     {
         //private SpringVector3NaturalMotionAnimation _springAnimation;
 
@@ -25,7 +25,7 @@ namespace AppUIBasics
         }
 
         public static readonly DependencyProperty TitleProperty =
-            DependencyProperty.Register("Title", typeof(string), typeof(HeaderTiles), new PropertyMetadata(null));
+            DependencyProperty.Register("Title", typeof(string), typeof(HeaderTile), new PropertyMetadata(null));
 
         public string Source
         {
@@ -34,7 +34,7 @@ namespace AppUIBasics
         }
 
         public static readonly DependencyProperty SourceProperty =
-            DependencyProperty.Register("Title", typeof(string), typeof(HeaderTiles), new PropertyMetadata(null));
+            DependencyProperty.Register("Source", typeof(string), typeof(HeaderTile), new PropertyMetadata(null));
 
         public string Link
         {
@@ -43,10 +43,10 @@ namespace AppUIBasics
         }
 
         public static readonly DependencyProperty LinkProperty =
-            DependencyProperty.Register("Title", typeof(string), typeof(HeaderTiles), new PropertyMetadata(null));
+            DependencyProperty.Register("Link", typeof(string), typeof(HeaderTile), new PropertyMetadata(null));
 
 
-        public HeaderTiles()
+        public HeaderTile()
         {
             this.InitializeComponent();
         }

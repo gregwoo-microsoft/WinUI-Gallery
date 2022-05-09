@@ -1,5 +1,5 @@
 <UserControl
-    x:Class="AppUIBasics.HeaderTiles"
+    x:Class="AppUIBasics.HeaderTile"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:AppUIBasics"
@@ -34,14 +34,14 @@
                 </ResourceDictionary.ThemeDictionaries>
             </ResourceDictionary>
         </Grid.Resources>
-        <HyperlinkButton Height="140" Padding="-1" NavigateUri="{x:Bind Link, Mode=OneWay}">
+        <HyperlinkButton Height="140" Padding="-1" NavigateUri="{x:Bind Link, Mode=OneWay}" Background="Red">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="90" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <Image
-                    Source="{x:Bind Source, Mode=OneWay}"
+                    Source="Assets/MainPage_Banner.png"
                     Stretch="UniformToFill"
                     HorizontalAlignment="Center"/>
 
