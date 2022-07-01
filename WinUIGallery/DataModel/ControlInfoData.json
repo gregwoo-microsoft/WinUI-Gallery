@@ -1993,8 +1993,8 @@
           ]
         },
         {
-          "UniqueId": "WebView",
-          "Title": "WebView",
+          "UniqueId": "WebView2",
+          "Title": "WebView2",
           "Subtitle": "A control that hosts HTML content in an app.",
           "ImagePath": "ms-appx:///Assets/ControlImages/WebView.png",
           "ImageIconPath": "ms-appx:///Assets/ControlIcons/WebViewIcon.png",
@@ -2003,7 +2003,7 @@
           "IsNew": false,
           "Docs": [
             {
-              "Title": "WebView - API",
+              "Title": "WebView2 - API",
               "Uri": "https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView"
             },
             {

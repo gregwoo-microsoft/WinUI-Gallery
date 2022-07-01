@@ -699,8 +699,8 @@
     <Compile Include="ControlPages\TeachingTipPage.xaml.cs">
       <DependentUpon>TeachingTipPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlPages\WebViewPage.xaml.cs">
-      <DependentUpon>WebViewPage.xaml</DependentUpon>
+    <Compile Include="ControlPages\WebView2Page.xaml.cs">
+      <DependentUpon>WebView2Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="ControlPages\ParallaxViewPage.xaml.cs">
       <DependentUpon>ParallaxViewPage.xaml</DependentUpon>
@@ -1005,7 +1005,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ControlPages\WebViewPage.xaml">
+    <Page Include="ControlPages\WebView2Page.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
