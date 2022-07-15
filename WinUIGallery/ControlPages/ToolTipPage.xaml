@@ -22,7 +22,12 @@
     <StackPanel>
         <local:ControlExample x:Name="Example1" HeaderText="A button with a simple ToolTip.">
             <local:ControlExample.Example>
-                <Button Content="Button with a simple ToolTip." ToolTipService.ToolTip="Simple ToolTip"/>
+                <Button Content="Button with a simple ToolTip.">
+                    <ToolTipService.ToolTip>
+                        <ToolTip Content="qqqwwweeerrrtttyyyuuuiiiooopppaaasssdddfffggghhhjjj51limite" Width="400"/>
+                    </ToolTipService.ToolTip>
+
+                </Button>
             </local:ControlExample.Example>
             <local:ControlExample.Xaml>
                 <x:String>
