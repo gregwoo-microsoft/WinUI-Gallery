@@ -112,14 +112,36 @@
                             Style="{StaticResource SubtitleTextBlockStyle}"                               
                             Text="{StaticResource WinUIVersion}"/>
                     </StackPanel>
-                    <StackPanel x:Name="HeaderTileOuterGrid" Orientation="Horizontal">
+                    <FlipView Height="200" Margin="0,255,0,0" Background="Transparent">
+                        <StackPanel x:Name="HeaderTileOuterGrid" Orientation="Horizontal">
+                            <VariableSizedWrapGrid x:Name="HeaderTileGrid"  Orientation="Horizontal" Margin="0,30,0,0">
+                                <controls:HeaderTile Title="Getting Started" Source="/Assets/gettingStarted.png" Link="https://docs.microsoft.com/windows/apps/get-started/"/>
+                                <controls:HeaderTile Title="Windows Design" Source="/Assets/style-1x.png" Link="https://docs.microsoft.com/windows/apps/design/"/>
+                                <controls:HeaderTile Title="GitHub Repo" Source="/Assets/githubTile.png" Link="https://github.com/microsoft/microsoft-ui-xaml"/>
+                                <controls:HeaderTile Title="Template Studio1" Source="/Assets/template_studio.png" Link="https://marketplace.visualstudio.com/items?itemName=TemplateStudio.TemplateStudioForWinUICs"/>
+                            </VariableSizedWrapGrid>
+                        </StackPanel>
+                        <StackPanel x:Name="HeaderTileOuterGrid2" Orientation="Horizontal">
+                            <VariableSizedWrapGrid x:Name="HeaderTileGrid2"  Orientation="Horizontal" Margin="40,30,0,0">
+                                <controls:HeaderTile Title="Getting Started" Source="/Assets/gettingStarted.png" Link="https://docs.microsoft.com/windows/apps/get-started/"/>
+                                <controls:HeaderTile Title="Windows Design" Source="/Assets/style-1x.png" Link="https://docs.microsoft.com/windows/apps/design/"/>
+                                <controls:HeaderTile Title="GitHub Repo" Source="/Assets/githubTile.png" Link="https://github.com/microsoft/microsoft-ui-xaml"/>
+                                <controls:HeaderTile Title="Template Studio1" Source="/Assets/template_studio.png" Link="https://marketplace.visualstudio.com/items?itemName=TemplateStudio.TemplateStudioForWinUICs"/>
+                            </VariableSizedWrapGrid>
+                        </StackPanel>
+                    </FlipView>
+                    <!--<StackPanel x:Name="HeaderTileOuterGrid" Orientation="Horizontal">
                         <VariableSizedWrapGrid x:Name="HeaderTileGrid"  Orientation="Horizontal" Margin="0,287,0,0">
                             <controls:HeaderTile Title="Getting Started" Source="/Assets/gettingStarted.png" Link="https://docs.microsoft.com/windows/apps/get-started/"/>
                             <controls:HeaderTile Title="Windows Design" Source="/Assets/style-1x.png" Link="https://docs.microsoft.com/windows/apps/design/"/>
                             <controls:HeaderTile Title="GitHub Repo" Source="/Assets/githubTile.png" Link="https://github.com/microsoft/microsoft-ui-xaml"/>
-                            <controls:HeaderTile Title="Template Studio" Source="/Assets/template_studio.png" Link="https://marketplace.visualstudio.com/items?itemName=TemplateStudio.TemplateStudioForWinUICs"/>
+                            <controls:HeaderTile Title="Template Studio1" Source="/Assets/template_studio.png" Link="https://marketplace.visualstudio.com/items?itemName=TemplateStudio.TemplateStudioForWinUICs"/>
+                            <controls:HeaderTile Title="Template Studio2" Source="/Assets/template_studio.png" Link="https://marketplace.visualstudio.com/items?itemName=TemplateStudio.TemplateStudioForWinUICs"/>
+                            <controls:HeaderTile Title="Template Studio3" Source="/Assets/template_studio.png" Link="https://marketplace.visualstudio.com/items?itemName=TemplateStudio.TemplateStudioForWinUICs"/>
+                            <controls:HeaderTile Title="Template Studio4" Source="/Assets/template_studio.png" Link="https://marketplace.visualstudio.com/items?itemName=TemplateStudio.TemplateStudioForWinUICs"/>
+                            <controls:HeaderTile Title="Template Studio5" Source="/Assets/template_studio.png" Link="https://marketplace.visualstudio.com/items?itemName=TemplateStudio.TemplateStudioForWinUICs"/>
                         </VariableSizedWrapGrid>
-                    </StackPanel>
+                    </StackPanel>-->
                 </Grid>
             </GridView.Header>
 
