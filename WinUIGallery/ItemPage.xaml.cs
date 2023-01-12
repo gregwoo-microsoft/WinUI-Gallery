@@ -70,7 +70,7 @@ namespace AppUIBasics
                 navigationRootPage.PageHeader.ToggleThemeAction = OnToggleTheme;
                 navigationRootPage.NavigationViewLoaded = OnNavigationViewLoaded;
                 navigationRootPage.PageHeader.CopyLinkAction = OnCopyLink;
-                navigationRootPage.PageHeader.ResetCopyLinkButton();
+                //navigationRootPage.PageHeader.ResetCopyLinkButton();
 
                 if (navigationRootPage.IsFocusSupported)
                 {

@@ -22,9 +22,9 @@ namespace AppUIBasics
         public Action CopyLinkAction { get; set; }
         public Action ToggleThemeAction { get; set; }
 
-        public TeachingTip TeachingTip1 => ToggleThemeTeachingTip1;
-        public TeachingTip TeachingTip2 => ToggleThemeTeachingTip2;
-        public TeachingTip TeachingTip3 => ToggleThemeTeachingTip3;
+        //public TeachingTip TeachingTip1 => ToggleThemeTeachingTip1;
+        //public TeachingTip TeachingTip2 => ToggleThemeTeachingTip2;
+        //public TeachingTip TeachingTip3 => ToggleThemeTeachingTip3;
 
         public object Title
         {
@@ -112,39 +112,39 @@ namespace AppUIBasics
         {
             this.InitializeComponent();
             // this.InitializeDropShadow(ShadowHost, TitleTextBlock.GetAlphaMask());
-            this.ResetCopyLinkButton();
+            //this.ResetCopyLinkButton();
         }
 
-        private void OnCopyLinkButtonClick(object sender, RoutedEventArgs e)
-        {
-            this.CopyLinkAction?.Invoke();
+        //private void OnCopyLinkButtonClick(object sender, RoutedEventArgs e)
+        //{
+        //    this.CopyLinkAction?.Invoke();
 
-            if (ProtocolActivationClipboardHelper.ShowCopyLinkTeachingTip)
-            {
-                this.CopyLinkButtonTeachingTip.IsOpen = true;
-            }
+        //    if (ProtocolActivationClipboardHelper.ShowCopyLinkTeachingTip)
+        //    {
+        //        this.CopyLinkButtonTeachingTip.IsOpen = true;
+        //    }
 
-            this.CopyLinkButton.Label = "Copied to Clipboard";
-            this.CopyLinkButtonIcon.Symbol = Symbol.Accept;
-        }
+        //    this.CopyLinkButton.Label = "Copied to Clipboard";
+        //    this.CopyLinkButtonIcon.Symbol = Symbol.Accept;
+        //}
 
         public void OnThemeButtonClick(object sender, RoutedEventArgs e)
         {
             ToggleThemeAction?.Invoke();
         }
 
-        public void ResetCopyLinkButton()
-        {
-            this.CopyLinkButtonTeachingTip.IsOpen = false;
-            this.CopyLinkButton.Label = "Generate Link to Page";
-            this.CopyLinkButtonIcon.Symbol = Symbol.Link;
-        }
+        //public void ResetCopyLinkButton()
+        //{
+        //    this.CopyLinkButtonTeachingTip.IsOpen = false;
+        //    this.CopyLinkButton.Label = "Generate Link to Page";
+        //    this.CopyLinkButtonIcon.Symbol = Symbol.Link;
+        //}
 
-        private void OnCopyDontShowAgainButtonClick(TeachingTip sender, object args)
-        {
-            ProtocolActivationClipboardHelper.ShowCopyLinkTeachingTip = false;
-            this.CopyLinkButtonTeachingTip.IsOpen = false;
-        }
+        //private void OnCopyDontShowAgainButtonClick(TeachingTip sender, object args)
+        //{
+        //    ProtocolActivationClipboardHelper.ShowCopyLinkTeachingTip = false;
+        //    this.CopyLinkButtonTeachingTip.IsOpen = false;
+        //}
 
         private void ToggleThemeTeachingTip2_ActionButtonClick(Microsoft.UI.Xaml.Controls.TeachingTip sender, object args)
         {
