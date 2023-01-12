@@ -70,7 +70,10 @@
                     FontSize="14" FontStyle="Italic"
                     Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/>
             </Grid>
-            <Border x:Name="commandBarBorder" Grid.Column="1" VerticalAlignment="Top">
+            <!--<Button Content="Open in Figma" Click="OnThemeButtonClick" Grid.Column="2" Margin="0,0,300,0"/>
+            <Button Content="Light theme" Grid.Column="1" Grid.Row="2" Margin="0,0,24,0"/>-->
+            <Border x:Name="commandBarBorder" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top">
+                
                 <CommandBar
                     x:Name="topCommandBar"
                     Height="40"
@@ -81,7 +84,7 @@
                     IsOpen="False"
                     IsSticky="False"
                     Visibility="Collapsed">
-                    <AppBarButton x:Name="CopyLinkButton" Click="OnCopyLinkButtonClick">
+                    <!--<AppBarButton x:Name="CopyLinkButton" Click="OnCopyLinkButtonClick">
                         <AppBarButton.Icon>
                             <SymbolIcon x:Name="CopyLinkButtonIcon" Margin="0,-2,0,0" Symbol="Link" />
                         </AppBarButton.Icon>
@@ -140,7 +143,7 @@
                                 </TeachingTip.Content>
                             </TeachingTip>
                         </AppBarButton.Resources>
-                    </AppBarButton>
+                    </AppBarButton>-->
                 </CommandBar>
             </Border>
         </Grid>

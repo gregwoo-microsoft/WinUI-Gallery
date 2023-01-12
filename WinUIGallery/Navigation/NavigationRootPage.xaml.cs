@@ -370,8 +370,8 @@ namespace AppUIBasics
         {
             if (PageHeader != null)
             {
-                PageHeader.TeachingTip1.IsOpen = false;
-                PageHeader.TeachingTip3.IsOpen = false;
+                //PageHeader.TeachingTip1.IsOpen = false;
+                //PageHeader.TeachingTip3.IsOpen = false;
             }
         }
 
